@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Survey Form</h1>
+		<form id="surveyForm" onsubmit="submitSurvey(event)">
+			<label for="name">Name:</label>
+			<input
+				type="text"
+				placeholder="Enter your name"
+				id="name"
+				name="name"
+				required
+			/><br /><br />
+
+			<label for="age">Age:</label>
+			<input
+				type="number"
+				placeholder="Enter age"
+				id="age"
+				name="age"
+				required
+			/><br /><br />
+
+			<label for="class">Class:</label>
+			<input
+				type="number"
+				placeholder="Enter class"
+				id="class"
+				name="class"
+				required
+			/><br /><br />
+
+			<label for="comment">Comment:</label>
+			<textarea
+				id="comment"
+				placeholder="Enter your comments here"
+				name="comment"
+				rows="7"
+				cols="50"
+				required
+			></textarea
+			><br /><br />
+
+			<button type="submit">Submit</button>
+		</form>
+
+		<h2>Survey Responses</h2>
+		<table id="surveyTable">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Class</th>
+					<th>Comment</th>
+				</tr>
+			</thead>
+			<tbody id="surveyData">
+				<!-- Survey responses will be inserted here -->
+			</tbody>
+		</table>
+		<footer>Created by Debasmita</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
